@@ -1,0 +1,26 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+mat-drawer-container {
+  flex-grow: 1;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.centered {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
