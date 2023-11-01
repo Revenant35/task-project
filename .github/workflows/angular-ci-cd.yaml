@@ -34,4 +34,4 @@ jobs:
           aws-region: us-east-2
 
       - name: Deploy to S3
-        run: aws s3 sync ./dist/project-name s3://task.diggity-dev.com --delete
+        run: aws s3 sync ./dist/task-project s3://task.diggity-dev.com --delete
