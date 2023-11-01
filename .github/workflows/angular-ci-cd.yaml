@@ -35,3 +35,6 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync ./dist/task-project s3://task.diggity-dev.com --delete
+
+      - name: Clear Cache
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
